@@ -1,10 +1,11 @@
 # id решение 139693592
 import string
 
+DECIMAL_BASE = 10
+DIGITS = frozenset(string.digits)
+
 
 def decode(encoded_string: str) -> str:
-    DECIMAL_BASE = 10
-    DIGITS = frozenset(string.digits)
     stack: list[str] = []
     code = ''
     num = 0
